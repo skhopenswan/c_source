@@ -52,6 +52,8 @@ int test_string() {
     int count = 10,i = 0;
     char* pn;
 
+    //Alias,只代表块内存
+
     while (i < count)
     {
         /* code */
