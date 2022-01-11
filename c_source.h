@@ -2,7 +2,9 @@
 *  Define And Config
 */
 
-#include<stdio.h>
+#include <stdio.h>
+
+#include <string.h>
 
 #define FALSE 0
 #define TRUE !FALSE
@@ -101,6 +103,23 @@ int test_pointer(void) {
     printf("字符串 = %s \n\n", Pn+1);
     return SUCCESS;
 }
+
+
+
+int test_memset() {
+    int Po[20], count = 10, i=0;
+    unsigned int zhi;
+    printf("%d, 0x%x.\n", count, Po);
+
+    memset(Po, '\1', 5);
+    memset(Po, '\0', 2);
+    
+    for(i = 0; i < count; i++) {
+        //zhi = (Po + i);
+        printf("0x%x;0x%x\n", Po+i, *(Po+i));
+    }
+}
+
 
 
 /*
