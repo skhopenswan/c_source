@@ -121,6 +121,21 @@ int test_memset() {
 }
 
 
+int test_linkedlist() {
+
+}
+
+int test_structpointer() {
+    
+}
+
+
+
+int btstack_is_little_endian(void){
+  unsigned short int sample = 0x0001;
+  return *(unsigned char*)&sample;
+}
+
 
 /*
 *  callback register

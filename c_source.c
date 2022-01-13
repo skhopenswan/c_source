@@ -8,6 +8,7 @@ int main()
     //test_sizet();
     //test_pointer();
     //test_string();
-    test_memset();
+    //test_memset();
+    printf("%d", btstack_is_little_endian());
     return SUCCESS;
 }
